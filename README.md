@@ -22,12 +22,20 @@ Results and observations in this area will be tracked, so watch this space!
 
 ## Objectives and Observations 
 
-1. Not FizzBuzz: 
+1. Inanna, Utu! (FizzBuzz in all but name): 
 ```
-Can we create FizzBuzz, without explicitly mentioning it?
-Status: To Be Started
+Goal: Can we create a form of FizzBuzz, without explicitly mentioning it?
+
+Status: Handles divisibles of 3, 5, 15. Must handle others.
 
 Observations:
 
+The GPT model can intuit branching logic and anticipate some obvious edge 
+cases, but also adheres strictly to the requirements of the tests.
+In some builds without tests for divisibles of neither 3 nor 5, the 
+function will return "". In others, it will (more appropriately) return 
+str(n). 
+Overall, the model implements nothing more or less than the code under 
+test: this requires careful test design.
 ```
 
