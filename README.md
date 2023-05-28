@@ -1,5 +1,7 @@
 # TDGPT: Test Driven GPT
 
+---
+
 ## Project rationale
 
 In the wake of models such as GPT-3.5/4 and applications such as chatGPT, 
@@ -66,4 +68,27 @@ floating point decimal places failing.
 
 - GPT can define class with appropriate methods.
 - Some ability to mutate internal data to support outer behaviours
+- Able to model behaviours such as mitosis and consumption of other cells
+- However, difficulties in understanding relation of density to mass/volume
+
+---
+
+## Future prospects 
+
+As the project currently stands, modelling has been attempted for both a
+function and a single object. Current results appear to indicate that 
+numerical patterns can be recognised, but the accurate implementation of
+formulae remains a confound. 
+This mirrors real-world concerns about the 
+capacity for GPT and other LLMs to deliver incorrect mathematical 
+calculations in situations where people may uncritically trust said LLMs.
+
+However, an as yet unexplored avenue in the present project is in more 
+complex elements of object-oriented design such as inheritance, composition
+and dependency injection. Moreover, the project should also explore the 
+generation of text processing/construction i.e: producing string outputs of
+a given format with contents dependent on inputs.
+
+This project shall grow incrementally as novel scenarious for 
+implementation of units of code emerge.
 
