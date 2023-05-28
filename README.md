@@ -29,26 +29,40 @@ others to try this endeavour for themselves!
 
 ## Objectives and Observations 
 
-1. Inanna, Utu! (FizzBuzz in all but name): 
-```
-Goal: Can we create a form of FizzBuzz, without explicitly mentioning it?
+### 1. Inanna, Utu! (FizzBuzz in all but name): 
 
-Status: Complete! (For now...)
+**Goal:**
 
-Observations:
+Can we create 'FizzBuzz', without explicitly mentioning it?
 
-The GPT model can intuit branching logic and anticipate some obvious edge 
-cases, but also adheres strictly to the requirements of the tests.
-In some builds without tests for divisibles of neither 3 nor 5, the 
-function will return "". In others, it will (more appropriately) return 
-str(n).
+**Status:**
 
-For the purposes of this project, tests will also have anonymising names
-from here on out to check that the model is not simply taking cues from 
-test names. While in real world applications descriptive names could play a 
-valid role in "TD-GPT", the project will focus on the test logic itself.
-Moreover, the following problems will be more novel in their nature. 
+Complete! (For now...)
 
-Overall, this project is an exercise in careful test design.
-```
+**Observations:**
+
+- GPT can intuit branching logic; adheres strictly to test requirements.
+- Without tests for divisibles of neither 3 nor 5, handling varies.
+- I.e. Between returning `""` and `str(n)`
+- Tests will now have anonymising names, with which builds still work.
+- Nonetheless, names could play a valid role in real world "TD-GPT".
+- Subsequent problems will be more novel/complex in their nature. 
+
+- Overall, this project is an exercise in careful test design.
+
+### 2. Modelling a Cell
+
+**Goal**:
+
+Starting with a simple model of a cell: with a weight, volume and some 
+basic behaviours. Alan Kay had a backgroud in biology, after all.
+
+**Status:**
+
+To Start.
+
+**Obserations:**
+
+- Todo...
+
 
