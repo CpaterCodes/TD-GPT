@@ -44,7 +44,7 @@ Complete! (For now...)
 - GPT can intuit branching logic; adheres strictly to test requirements.
 - Without tests for divisibles of neither 3 nor 5, handling varies.
 - I.e. Between returning `""` and `str(n)`
-- Tests will now have anonymising names, with which builds still work.
+- Test names will be general as possible while meaningful.
 - Nonetheless, names could play a valid role in real world "TD-GPT".
 - Subsequent problems will be more novel/complex in their nature. 
 
@@ -59,10 +59,11 @@ basic behaviours. Alan Kay had a backgroud in biology, after all.
 
 **Status:**
 
-To Start.
+Consumption tests passing. However, some mitosis tests and handling of 
+floating point decimal places failing.
 
-**Obserations:**
+**Observations:**
 
-- Todo...
-
+- GPT can define class with appropriate methods.
+- Some ability to mutate internal data to support outer behaviours
 
