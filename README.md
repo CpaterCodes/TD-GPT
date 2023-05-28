@@ -1,6 +1,5 @@
 # TDGPT: Test Driven GPT
-
----
+### How far can we go by using our tests to prompt GPT 3.5?
 
 ## Project rationale
 
