@@ -18,14 +18,15 @@ remains controversial and warrants healthy skepticism.
 
 But there's another possibility: what if, instead of generating tests for
 our code, LLMs can generate code given sufficiently sophisticated tests?
-In theory, development could be "test driven" with a hands-off approach to
-the source code altogether (this is, of course, in theory.)
+In theory, development could be "test driven" with a hands-off 
+(or light-touch) approach to the source code.
 
 Results and observations in this project will be noted.
 It must be considered that the present project is as much concerned with 
 the power of TDD as it is with the power of LLMs to generate code. Moreover,
 the present project is as much a form of play as an investigation: I invite
-others to try this endeavour for themselves!
+others to try this endeavour for themselves! 
+(A step-by-step explanation of the process is to come)
 
 ---
 
@@ -39,30 +40,32 @@ Can we create 'FizzBuzz', without explicitly mentioning it?
 
 **Status:**
 
-Complete! (For now...)
+Complete!
 
 **Observations:**
 
-- GPT can intuit branching logic; adheres strictly to test requirements.
-- Without tests for divisibles of neither 3 nor 5, handling varies.
+- GPT can intuit branching logic; adheres strictly to test requirements
+- Without tests for divisibles of neither 3 nor 5, handling varies
 - I.e. Between returning `""` and `str(n)`
-- Test names will be general as possible while meaningful.
-- Nonetheless, names could play a valid role in real world "TD-GPT".
-- Subsequent problems will be more novel/complex in their nature. 
-
-- Overall, this project is an exercise in careful test design.
+- Test names will be general as possible while meaningful
+- Nonetheless, names could play a valid role in real world "TD-GPT"
+- Subsequent problems will be more novel/complex in their nature 
+- Overall, careful test design is important, even for simple logic
 
 ### 2. Modelling a Cell
 
 **Goal**:
 
-Starting with a simple model of a cell: with a weight, volume and some 
-basic behaviours. Alan Kay had a backgroud in biology, after all.
+A simple model of a cell: with a weight, volume and some 
+basic behaviours. 
+*(Note: Alan Kay had a background as a molecular biologist,
+which influenced his conception of OOP with objects behaving as 'cells', 
+affecting the state of other 'cells' with messages).*
 
 **Status:**
 
-Consumption tests passing. However, some mitosis tests and handling of 
-floating point decimal places failing.
+Consumption and mitosis tests passing. 
+However, difficulty determining a working formula for density.
 
 **Observations:**
 
@@ -79,9 +82,9 @@ As the project currently stands, modelling has been attempted for both a
 function and a single object. Current results appear to indicate that 
 numerical patterns can be recognised, but the accurate implementation of
 formulae remains a confound. 
-This mirrors real-world concerns about the 
-capacity for GPT and other LLMs to deliver incorrect mathematical 
-calculations in situations where people may uncritically trust said LLMs.
+This mirrors real-world concerns about the capacity for GPT and other LLMs 
+to deliver incorrect mathematical calculations in situations where people 
+may uncritically trust said LLMs.
 
 However, an as yet unexplored avenue in the present project is in more 
 complex elements of object-oriented design such as inheritance, composition
