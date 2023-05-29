@@ -47,13 +47,13 @@ Complete!
 - Without tests for divisibles of neither 3 nor 5, handling varies
 - I.e. Between returning `""` and `str(n)`
 - Test names will be general as possible while meaningful
-- Nonetheless, names could play a valid role in real world "TD-GPT"
+- Nonetheless, names/specs could play a valid role in real world "TD-GPT"
 - Subsequent problems will be more novel/complex in their nature 
 - Overall, careful test design is important, even for simple logic
 
 ### 2. Modelling a Cell
 
-**Goal**:
+**Goal:**
 
 A simple model of a cell: with a weight, volume and some 
 basic behaviours. 
@@ -72,6 +72,25 @@ However, difficulty determining a working formula for density.
 - Some ability to mutate internal data to support outer behaviours
 - Able to model behaviours such as mitosis and consumption of other cells
 - However, difficulties in understanding relation of density to mass/volume
+
+### 3. Wrangling the Object Zoo
+
+**Goal:**
+
+A series of classes which share a set of methods, albeit producing different
+values for each method per class.
+
+**Status:**
+
+Passing tests for vocalisation and shedding. However, should attempt to
+implement more features and choose a variety of animals.
+
+**Observations:**
+
+- Code generation produces a simple inheritance hierarchy
+- However, does not yet currently go beyond one layer of inheritance
+- This may emerge at scale or with more behaviours to implement 
+- Other projects may, in turn, employ composition
 
 ---
 
