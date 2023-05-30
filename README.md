@@ -63,15 +63,15 @@ affecting the state of other 'cells' with messages).*
 
 **Status:**
 
-Consumption and mitosis tests passing. 
-However, difficulty determining a working formula for density.
+Consumption, density and mitosis tests passing. Complete!
 
 **Observations:**
 
 - GPT can define class with appropriate methods.
 - Some ability to mutate internal data to support outer behaviours
 - Able to model behaviours such as mitosis and consumption of other cells
-- However, difficulties in understanding relation of density to mass/volume
+- Difficulties understanding density in terms of 'weight', but not 'mass'
+- Again, semantic elements substantially affect accuracy of implementation.
 
 ### 3. Wrangling the Object Zoo
 
