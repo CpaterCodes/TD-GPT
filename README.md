@@ -71,7 +71,7 @@ Consumption, density and mitosis tests passing. Complete!
 - Some ability to mutate internal data to support outer behaviours
 - Able to model behaviours such as mitosis and consumption of other cells
 - Difficulties understanding density in terms of 'weight', but not 'mass'
-- Again, semantic elements substantially affect accuracy of implementation.
+- Again, semantic elements substantially affect accuracy of implementation
 
 ### 3. Wrangling the Object Zoo
 
@@ -88,8 +88,8 @@ implement more features and choose a variety of animals.
 **Observations:**
 
 - Code generation produces a simple inheritance hierarchy
-- However, does not yet currently go beyond one layer of inheritance
-- This may emerge at scale or with more behaviours to implement 
+- With enough subclasses, multi layer inheritance emerges
+- Could also emerge with more behaviours to implement 
 - Other projects may, in turn, employ composition
 
 ---
@@ -104,11 +104,17 @@ This mirrors real-world concerns about the capacity for GPT and other LLMs
 to deliver incorrect mathematical calculations in situations where people 
 may uncritically trust said LLMs.
 
-However, an as yet unexplored avenue in the present project is in more 
-complex elements of object-oriented design such as inheritance, composition
-and dependency injection. Moreover, the project should also explore the 
-generation of text processing/construction i.e: producing string outputs of
-a given format with contents dependent on inputs.
+Object oriented design has been explored with attention to inheritance;
+moreover, with sufficient subclasses for patterns to become obvious the 
+generated code can implement multiple levels of inheritance. However, the 
+use of composition also warrants exloration, particularly as an opportunity
+to attempt dependency injection.
+
+The project should also explore the generation of text 
+processing/construction i.e: producing string outputs of a given format with
+contents dependent on inputs.
+More importantly, the project shall also explore the generation of a simple
+REST API using a framework such as flask or fastapi in future.
 
 This project shall grow incrementally as novel scenarious for 
 implementation of units of code emerge.
