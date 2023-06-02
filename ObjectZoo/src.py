@@ -1,35 +1,57 @@
 
 class Animal:
-    def vocalise(self) -> str:
-        raise NotImplementedError("Must be overridden in subclass")
     
-    def shed(self) -> str:
-        raise NotImplementedError("Must be overridden in subclass")
+    def vocalise(self):
+        pass
     
-class Elephant(Animal):
-    def vocalise(self) -> str:
-        return "Trumpet!"
+    def shed(self):
+        pass
     
-    def shed(self) -> str:
+    
+class Mammal(Animal):
+    
+    def shed(self):
         return "It sheds hair"
     
-class Lion(Animal):
-    def vocalise(self) -> str:
-        return "Roar!"
     
-    def shed(self) -> str:
-        return "It sheds hair"
+class Reptile(Animal):
     
-class Crocodile(Animal):
-    def vocalise(self) -> str:
-        return "Hiss!"
-    
-    def shed(self) -> str:
+    def shed(self):
         return "It sheds scales"
     
-class Snake(Animal):
-    def vocalise(self) -> str:
-        return "Hiss!"
+
+class Elephant(Mammal):
+
+    def vocalise(self):
+        return "Trumpet!"
+
+
+class Lion(Mammal):
     
-    def shed(self) -> str:
-        return "It sheds skin"
+    def vocalise(self):
+        return "Roar!"
+
+
+class Crocodile(Reptile):
+    
+    def vocalise(self):
+        return "Hiss!"
+
+
+class Snake(Reptile):
+   
+    def vocalise(self):
+        return "Hiss!"
+
+
+class Gorilla(Mammal):
+
+    def vocalise(self):
+        return "Umm-umm!"
+
+
+class Lizard(Reptile):
+    
+    def vocalise(self):
+        raise Exception("No sound")
+        
