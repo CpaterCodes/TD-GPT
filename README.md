@@ -25,9 +25,49 @@ It must be considered that the present project is as much concerned with
 the power of TDD as it is with the power of LLMs to generate code. Moreover,
 the present project is as much a form of play as an investigation: I invite
 others to try this endeavour for themselves! 
-(A step-by-step explanation of the process is to come)
 
----
+## Instructions for playing around
+
+I invite those who are interested in this approach to try it out for 
+themselves. All you will need is:
+
+- An OpenAI secret key, generated through an OpenAI account 
+- Python 3.11 or higher
+- Pipenv
+
+**To install and setup:**
+
+1. Clone this repository and navigate to it.
+2. Copy `.env.example` to `.env`
+3. In `.env`, set `OPENAI_KEY` to your OpenAI key.
+
+**To run tests:**
+
+To run tests for `InannaUtu`, for example, you can run 
+`pipenv run pytest InannaUtu/test.py`. 
+
+However, a bash script has also been provided for convenience as this is 
+otherwise a verbose command. Continuing with `InannaUtu` as an example it 
+can be run with `./test.sh InannaUtu/`, assuming the script has been made 
+executable (`chmod +x ./test.sh`).
+
+**To generate source code:**
+
+For a given experiment, using `InannaUtu` once again as an example, one can
+run `pipenv run python3 prompt.py InannaUtu/` to generate fresh source code 
+for `InannaUtu`. However, a script is also provided for convenience and can 
+be invoked with `./codegen.sh InannaUtu/` instead.
+
+**To run your own TD-GPT experiments:**
+
+We have established that both testing and code generation can be performed
+for an experiment directory such as `InannaUtu`, `Cell` or `ObjectZoo`.
+
+However, all that a custom directory needs to perform code generation and 
+testing is a file named `test.py` containing pytest tests as if for a 
+set of units of code which already exist in a neighbouring file `src.py`.
+See existing `test.py` files under one of the aforementioned experiment 
+directories for a visual example.
 
 ## Objectives and Observations 
 
@@ -57,9 +97,12 @@ Complete!
 
 A simple model of a cell: with a weight, volume and some 
 basic behaviours. 
-*(Note: Alan Kay had a background as a molecular biologist,
+*Note:* 
+```
+Alan Kay had a background as a molecular biologist,
 which influenced his conception of OOP with objects behaving as 'cells', 
-affecting the state of other 'cells' with messages).*
+affecting the state of other 'cells' with messages.
+```
 
 **Status:**
 
@@ -92,30 +135,9 @@ implement more features and choose a variety of animals.
 - Could also emerge with more behaviours to implement 
 - Other projects may, in turn, employ composition
 
----
-
 ## Future prospects 
 
-As the project currently stands, modelling has been attempted for both a
-function and a single object. Current results appear to indicate that 
-numerical patterns can be recognised, but the accurate implementation of
-formulae remains a confound. 
-This mirrors real-world concerns about the capacity for GPT and other LLMs 
-to deliver incorrect mathematical calculations in situations where people 
-may uncritically trust said LLMs.
-
-Object oriented design has been explored with attention to inheritance;
-moreover, with sufficient subclasses for patterns to become obvious the 
-generated code can implement multiple levels of inheritance. However, the 
-use of composition also warrants exloration, particularly as an opportunity
-to attempt dependency injection.
-
-The project should also explore the generation of text 
-processing/construction i.e: producing string outputs of a given format with
-contents dependent on inputs.
-More importantly, the project shall also explore the generation of a simple
-REST API using a framework such as flask or fastapi in future.
-
-This project shall grow incrementally as novel scenarious for 
-implementation of units of code emerge.
+Future exercises in this project can explore composition-based designs or
+complete software systems such as REST APIs. As such, this project may be
+revisited and expanded upon in future.
 

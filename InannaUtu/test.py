@@ -1,7 +1,6 @@
 import pytest
 from src import inanna_utu
 
-# Test names are anonymised: the test conditions alone will shape results!
 
 def test_inanna():
     for n in [3, 6, 9, 27, 96, 72, 57, 117]:
